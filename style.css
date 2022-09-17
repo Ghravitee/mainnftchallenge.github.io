@@ -1,0 +1,177 @@
+body {
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+    position: relative;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Utility class */
+
+.out {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
+  }
+
+
+.image-container {
+    position: relative;
+  }
+
+.card-image {
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 12px;
+  }
+
+.view {
+    width:50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .image-container:hover .overlay {
+    display: block;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .image-container:hover .view{
+    display: block;
+  }
+
+.main-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.main-heading:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.the-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    text-align: left;
+    /* margin-bottom: 6px; */
+}
+
+.price-time {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:hsl(215, 51%, 70%);
+    margin-top: 10px;
+}
+
+.price-time li {
+    display: flex;
+  align-items: center;
+}
+
+.price-time li:first-child{
+    color:hsl(178, 100%, 50%);
+  }
+
+.price-time li:first-child::before{
+    content: "";
+    background: url(../images/icon-ethereum.svg);
+    width: 10px;
+    height: 18px;
+    margin-right: 8px;
+  }
+.price-time li:nth-child(2)::before {
+    content: "";
+    background: url(../images/icon-clock.svg) ;
+    width: 15px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .hr-line{
+    height: 1px;
+    width: 100%;
+    background-color:hsl(215, 32%, 27%);
+    margin-bottom: 12px;
+  }
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    width: 232px;
+    height: 28px;
+}
+
+.author-image {
+    display: flex;
+    width: 30px;
+    height: 28px;
+    border-radius: 20px;
+    border: solid white 1px;
+    margin-right: 1rem;
+}
+
+.author-name {
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.white-text {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.white-text:hover {
+    color: hsl(178, 100%, 50%);
+}
+
